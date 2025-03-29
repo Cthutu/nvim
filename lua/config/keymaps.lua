@@ -17,3 +17,9 @@ end, { desc = "Open diagnostics in a float" })
 -- Keep selections
 -- vim.keymap.set("n", "<", "<gv", { desc = "Outdent" })
 -- vim.keymap.set("n", ">", ">gv", { desc = "Indent" })
+
+-- Text movement
+vim.keymap.set("n", "<M-up>", "<cmd>m-2<cr>==", { desc = "Move line up" })
+vim.keymap.set("n", "<M-down>", "<cmd>m+<cr>==", { desc = "Move line down" })
+vim.keymap.set("i", "<M-up>", "<esc><cmd>m-2<cr>==gi", { desc = "Move line up" })
+vim.keymap.set("i", "<M-down>", "<esc><cmd>m +1<cr>==gi", { desc = "Move line down" })

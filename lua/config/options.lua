@@ -53,6 +53,8 @@ new_opts = {
     -- Presentation control
     scrolloff = 10, -- Number of lines to keep above and below the cursor.
     --cmdheight = 0,          -- Disable command line, giving us an extra line.
+
+    digraph = true,
 }
 
 vim.opt = table_merge(vim.opt, new_opts)
