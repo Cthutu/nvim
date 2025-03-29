@@ -1,4 +1,4 @@
-function table_merge(base, new)
+local function table_merge(base, new)
     for k, v in pairs(new) do
         base[k] = new[k]
     end
